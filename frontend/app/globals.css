@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, Ubuntu, Cantarell, 'Fira Sans', sans-serif;
+  }
+  
+  body {
+    @apply bg-whatsapp-gray-light text-gray-900;
+  }
+}
+
+@layer components {
+  .message-bubble {
+    @apply max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg px-3 py-2 mb-1 relative;
+  }
+  
+  .message-outbound {
+    @apply bg-whatsapp-green-light ml-auto;
+  }
+  
+  .message-inbound {
+    @apply bg-white mr-auto;
+  }
+  
+  .message-timestamp {
+    @apply text-xs text-gray-500 mt-1;
+  }
+  
+  .status-tick {
+    @apply inline-block w-4 h-4;
+  }
+  
+  .status-sent {
+    @apply text-gray-400;
+  }
+  
+  .status-delivered {
+    @apply text-gray-500;
+  }
+  
+  .status-read {
+    @apply text-whatsapp-blue-light;
+  }
+  
+  .chat-input {
+    @apply w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-whatsapp-green resize-none;
+  }
+  
+  .chat-send-button {
+    @apply bg-whatsapp-green hover:bg-whatsapp-green-dark text-white rounded-full p-2 transition-colors duration-200;
+  }
+  
+  .conversation-item {
+    @apply flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200 transition-colors duration-150;
+  }
+  
+  .conversation-item.active {
+    @apply bg-whatsapp-gray;
+  }
+  
+  .sidebar-header {
+    @apply bg-whatsapp-gray-dark text-white p-4 flex items-center justify-between;
+  }
+  
+  .chat-header {
+    @apply bg-whatsapp-gray-light border-b border-gray-300 p-4 flex items-center;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
