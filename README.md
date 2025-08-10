@@ -4,8 +4,8 @@ A full-stack WhatsApp Web clone built with Node.js, Express, MongoDB, Next.js, a
 
 ## 🚀 Live Demo
 
-- **Frontend**: [Deployed on Vercel](https://your-app.vercel.app)
-- **Backend API**: [Deployed on Render](https://your-backend.onrender.com)
+- **Frontend**: [Deployed on Vercel](https://whatsapp-web-b2t7.vercel.app/)
+- **Backend API**: [Deployed on Render](https://whatsapp-web-86sx.onrender.com)
 
 ## 📋 Features
 
@@ -348,6 +348,8 @@ This project is licensed under the MIT License.
 ## 📞 Support
 
 For support and questions, please create an issue in the GitHub repository.
+Contact: Sanjay Kirti
+Email: lukebrushwood@gmail.com
 
 ---
 
